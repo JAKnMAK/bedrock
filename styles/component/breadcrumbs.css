@@ -1,0 +1,13 @@
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.breadcrumbs > * + *::before {
+  color: var(--separator-color, #d4d4d4);
+  content: "\f105";
+  font-family: "Font Awesome Solid";
+  margin: 0 0.25rem 0 0.5rem;
+}

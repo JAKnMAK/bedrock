@@ -1,0 +1,35 @@
+{% if items %}
+  <ul>
+    {% if items.first %}
+      <li>
+        <a{{ items.first.attributes }}>{{ items.first.text|default('« First'|t) }}</a>
+      </li>
+    {% endif %}
+    {% if items.previous %}
+      <li>
+        <a{{ items.previous.attributes }}>{{ items.previous.text|default('‹ Previous'|t) }}</a>
+      </li>
+    {% endif %}
+    {% if ellipses.previous %}
+      <li>&hellip;</li>
+    {% endif %}
+    {% for key, item in items.pages %}
+      <li>
+        <a{{ item.attributes }}>{{- key -}}</a>
+      </li>
+    {% endfor %}
+    {% if ellipses.next %}
+      <li>&hellip;</li>
+    {% endif %}
+    {% if items.next %}
+      <li>
+        <a{{ items.next.attributes }}>{{ items.next.text|default('Next ›'|t) }}</a>
+      </li>
+    {% endif %}
+    {% if items.last %}
+      <li>
+        <a{{ items.last.attributes }}>{{ items.last.text|default('Last »'|t) }}</a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}

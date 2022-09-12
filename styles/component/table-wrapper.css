@@ -1,0 +1,9 @@
+.table-wrapper {
+    margin: 1rem 0;
+    overflow: auto;
+  }
+  
+  .table-wrapper > table {
+    margin: 0;
+  }
+  

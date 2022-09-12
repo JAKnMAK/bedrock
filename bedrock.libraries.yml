@@ -1,0 +1,21 @@
+bedrock:
+  css:
+    base:
+      styles/base.css: {}
+    layout:
+      styles/layout/off-canvas-wrapper.css: {}
+      styles/layout/page.css: {}
+      styles/layout/region.css: {}
+      styles/layout/off-canvas.css: {}
+    component:
+      styles/component/brand.css: {}
+      styles/component/breadcrumbs.css: {}
+      styles/component/menu.css: {}
+      styles/component/page-title.css: {}
+      styles/component/pager.css: {}
+      styles/component/title.css: {}
+    theme:
+      styles/theme.css: {}
+  js:
+    scripts/menu.js: {}
+    scripts/off-canvas.js: {}

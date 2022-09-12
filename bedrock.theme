@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+
+function bedrock_preprocess_page(&$variables) {
+  $class = 'has-no-sidebars';
+  $hasSidebarOne = !empty($variables['page']['sidebar_one']);
+  $hasSidebarTwo = !empty($variables['page']['sidebar_two']);
+
+  if ($hasSidebarOne && $hasSidebarTwo) {
+    $class = 'has-both-sidebars';
+  }
+  elseif ($hasSidebarOne) {
+    $class = 'has-sidebar-one';
+  }
+  elseif ($hasSidebarTwo) {
+    $class = 'has-sidebar-two';
+  }
+
+  $variables['attributes']['class'][] = 'page';
+  $variables['attributes']['class'][] = $class;
+}
+
+function bedrock_preprocess_page_title(&$variables) {
+    $variables['title_attributes']['class'][] = 'page-title';
+  }
+
+function bedrock_preprocess_region(&$variables) {
+  $variables['attributes']['class'][] = 'region';
+  $variables['attributes']['class'][] = Html::getClass($variables['region']);
+}

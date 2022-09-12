@@ -1,0 +1,33 @@
+.region {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.region:is(.content, .content-aside, .content-navigation) {
+  flex-direction: column;
+}
+
+.region:is(.header-bottom, .header-top, .footer-bottom, .footer-top) {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.region.content {
+  flex: 1;
+}
+
+@media (min-width: 80rem) {
+  .region.navigation-two {
+    flex: 0 0 20rem;
+  }
+
+  .region.related {
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 100rem) {
+  .region.related {
+    flex: 0 0 20rem;
+  }
+}

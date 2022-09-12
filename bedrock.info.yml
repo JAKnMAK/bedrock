@@ -1,0 +1,21 @@
+name: 'Bedrock'
+description: ''
+version: 1.0.0
+core_version_requirement: ^9 || ^10
+type: theme
+base theme: false
+libraries:
+  - bedrock/bedrock
+regions:
+  brand: 'Brand'
+  content: 'Content'
+  copyright: 'Copyright'
+  information_one: 'Information 1'
+  information_two: 'Information 2'
+  navigation_one: 'Navigation 1'
+  navigation_two: 'Navigation 2'
+  related: 'Related'
+  title: 'Title'
+ckeditor_stylesheets:
+  - styles/base.css
+  - styles/theme.css

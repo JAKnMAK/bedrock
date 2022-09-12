@@ -1,0 +1,20 @@
+<div{{ attributes.addClass('field', field_name|clean_class, label_display == 'inline' ? 'is-inline') }}>
+  {% if not label_hidden %}
+    <div{{ title_attributes.addClass('field-title', label_display == 'visually_hidden' ? 'is-visually-hidden') }}>{{ label }}</div>
+    {% if multiple %}
+      <div class="field-items">
+    {% endif %}
+  {% endif %}
+  {% if label_hidden and not multiple %}
+    {% for item in items %}
+      {{ item.content }}
+    {% endfor %}
+  {% else %}
+    {% for item in items %}
+      <div class="field-item">{{ item.content }}</div>
+    {% endfor %}
+  {% endif %}
+  {% if not label_hidden and multiple %}
+    </div>
+  {% endif %}
+</div>

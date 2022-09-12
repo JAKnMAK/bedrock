@@ -1,0 +1,20 @@
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes.addClass('menu', menu_name|clean_class), 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <ul{{ attributes }}>
+      {% for item in items %}
+        <li{{ item.attributes }}>
+          {{ link(item.title, item.url) }}
+          {% if item.below %}
+            {% set attributes = create_attribute({'class': ['submenu']}) %}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

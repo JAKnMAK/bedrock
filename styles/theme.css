@@ -1,0 +1,183 @@
+/*
+
+:root {
+  --font-family: "Roboto", sans-serif;
+
+  --accent-color: #bf5700;
+  --heading-color: #005f86;
+  --heading-font-family: "Roboto Serif", serif;
+
+  --neutral-050: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+
+  --menu-action-color: var(--body-color);
+  --menu-action-color-hover: var(--link-color);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+
+
+
+.region.header-top {
+  background-color: #BF5700;
+  color: #FFF;
+}
+
+.region.footer-top {
+  background-color: #d6d2c4;
+  border-top: solid 0.0625rem #d4d4d4;
+}
+
+.region.footer-bottom {
+  background-color: #d6d2c4;
+  border-top: solid 0.0625rem #d4d4d4;
+}
+
+
+
+
+
+
+
+.filler {
+  height: 25rem;
+  background: url(/themes/custom/bedrock/images/background.jpeg) rgba(191, 87, 0, 0.5);
+  background-position: 50% 100%;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+*/
+
+.page-section.one {
+  background-color: #bf5700;
+}
+
+
+.page-section.three {
+  background-color: #31455D;
+  color: #fff;
+}
+
+.page-section.five {
+  background-color: #d6d2c4;
+}
+
+.page-section.six {
+  background-color: #d6d2c4;
+}
+
+
+.page-title {
+  color: #fff;
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto_regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/roboto_regular_italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/roboto_bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/roboto_bold_italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto_serif_regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/roboto_serif_regular_italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/roboto_serif_bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/roboto_serif_bold_italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Font Awesome Brands';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fa_brands.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Font Awesome Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fa_regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Font Awesome Solid';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fa_solid.ttf") format("truetype");
+}

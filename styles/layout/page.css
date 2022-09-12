@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-section.four {
+  flex: 1;
+}
+
+.page-section.three {
+  min-height: 20rem;
+}
+
+.page-section.two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 80rem) {
+  .page-section.four {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 100rem) {
+  .page-section.four {
+    flex-wrap: nowrap;
+  }
+}

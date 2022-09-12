@@ -1,0 +1,140 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: inherit;
+}
+
+.menu a:hover {
+  color: var(--menu-action-color-hover);
+  text-decoration: none;
+}
+
+.region:is(.header-top, .header-bottom) .menu {
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+
+/*
+:root {
+    --menu-action-color: var(--body-color);
+    --menu-action-color-hover: var(--link-color-hover);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-button {
+    font-family: "Font Awesome Solid";
+}
+
+.menu-button:not(:disabled) {
+    background-color: transparent;
+    border: none;
+    color: var(--menu-action-color);
+    grid-area: 1 / 2 / 2 / -1;
+    padding: 0.25rem 0;
+}
+
+.menu-button:not(:disabled):hover {
+    background-color: transparent;
+    color: var(--menu-action-color-hover);
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: min-content 1fr;
+}
+
+.menu-link {
+    color: var(--menu-action-color);
+    display: flex;
+    flex-grow: 1;
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    align-items: center;
+}
+
+.menu-link:hover {
+    color: var(--menu-action-color-hover);
+}
+
+.menu-submenu {
+    display: none;
+    grid-area: 2 / 1 / -1 / -1;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.menu-submenu.is-open {
+    display: block;
+}
+
+@media (min-width: 60rem) {
+    .page-header .menu {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .page-header .menu-button:not(:focus):not(:active) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .page-header .menu-submenu {
+        background-color: white;
+        border: 0.0625rem solid #a9a9a9;
+        border-radius: 0.25rem; 
+        left: 0;
+        min-width: 20rem;
+        padding: 0.5rem;
+        position: absolute;
+        right: auto;
+        top: 100%;
+    }
+
+    .page-header .menu-item {
+        display: flex;
+        position: relative;
+    }
+
+    .page-header .menu-item:hover > .menu-submenu {
+        display: block;
+    }
+
+    .page-header .menu-item.has-submenu > .menu-link::after {
+        content: "\f107";
+        font-family: "Font Awesome Solid";
+        margin-left: auto;
+        padding-left: 0.25rem;
+    }
+
+    .page-header .menu-item .menu-item > .menu-submenu {
+        left: 100%;
+        top: 0;
+    }
+
+    .page-header .menu-item .menu-item.has-submenu > .menu-link::after {
+        content: "\f105";
+    }
+}
+*/
